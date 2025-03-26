@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { Tilt } from "react-tilt"
+import { FaGithub } from "react-icons/fa"
 import { Button } from "@/components/ui/button"
 
 export default function HomeSection() {
@@ -17,7 +18,7 @@ export default function HomeSection() {
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-4">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
                 Vikram
               </span>
             </h2>
@@ -35,13 +36,13 @@ export default function HomeSection() {
               />
             </h3>
             <p className="text-lg mb-8 max-w-lg text-gray-300">
-              Passionate about creating innovative solutions through code. 
-              Specialized in full-stack development with expertise in AI/ML. 
-              Building the future, one project at a time.
+              As a Computer Science student specializing in Artificial Intelligence and Machine Learning, I'm delving deep into Data Structures and Algorithms using C++, AI, and ML. My passions extend beyond coding to include the great outdoors and cricket. Whether scaling a mountain, exploring new subjects, or competing on the cricket field, I bring enthusiasm and dedication to everything I do.
             </p>
             <div className="flex gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
-                <a href="#contact">Get in Touch</a>
+              <Button size="lg" className=" hover:bg-blue-70" asChild>
+                <a href="https://github.com/Vikram-0401">
+                  <FaGithub size={24} />
+                </a>
               </Button>
               <Button
                 variant="outline"
