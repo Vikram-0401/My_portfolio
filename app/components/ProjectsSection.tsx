@@ -58,7 +58,7 @@ export default function ProjectsSection() {
   ]
 
   return (
-    <section className="py-32 relative">
+    <section id="projects" className="py-32 relative">
     <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,rgb(0,0,0)_90%)]" />
     <div className="container mx-auto px-4 relative">
         <motion.div
