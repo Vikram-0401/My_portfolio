@@ -1,3 +1,4 @@
+
 "use client"
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
@@ -18,7 +19,7 @@ export default function HomeSection() {
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-4">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent animate-gradient">
                 Vikram
               </span>
             </h2>
@@ -39,19 +40,34 @@ export default function HomeSection() {
               As a Computer Science student specializing in Artificial Intelligence and Machine Learning, I'm delving deep into Data Structures and Algorithms using C++, AI, and ML. My passions extend beyond coding to include the great outdoors and cricket. Whether scaling a mountain, exploring new subjects, or competing on the cricket field, I bring enthusiasm and dedication to everything I do.
             </p>
             <div className="flex gap-4">
-              <Button size="lg" className=" hover:bg-blue-70" asChild>
-                <a href="https://github.com/Vikram-0401">
-                  <FaGithub size={24} />
-                </a>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-                className="text-gray-100 border-gray-400 hover:bg-gray-800 hover:text-blue-400 hover:border-blue-400 transition-all duration-300"
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <a href="#projects">View Work</a>
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  asChild
+                  className="text-gray-100 border-gray-400 hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white hover:border-transparent transition-all duration-300"
+                >
+                  <a href="#projects">View Work</a>
+                </Button>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+                  asChild
+                >
+                  <a href="https://github.com/Vikram-0401">
+                    <FaGithub size={24} />
+                  </a>
+                </Button>
+              </motion.div>
             </div>
           </motion.div>
 
