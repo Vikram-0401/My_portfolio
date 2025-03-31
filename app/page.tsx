@@ -19,15 +19,16 @@ export default function Portfolio() {
         <ProjectsSection />
         <ContactSection />
 
-        <footer className="py-8 border-t border-gray-800 bg-gray-900/50">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-400">
-              © {new Date().getFullYear()} Vikram. Built with 
-              <span className="text-blue-400"> React</span> and 
-              <span className="text-purple-400"> TailwindCSS</span>
+        <footer className="py-8 border-t border-gray-800 bg-gray-900/50 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center justify-center space-y-4">
+
+            <p className="text-sm text-gray-400 font-medium">
+              © Vikram R. {new Date().getFullYear()} All rights reserved.
             </p>
           </div>
-        </footer>
+        </div>
+      </footer>
       </div>
     </div>
   )
