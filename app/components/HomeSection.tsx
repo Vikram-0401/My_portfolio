@@ -79,8 +79,8 @@ export default function HomeSection() {
           >
             <Tilt options={{ max: 25, scale: 1.05 }}>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500/30 shadow-xl">
-                <img
-                  src="/placeholder.svg?height=320&width=320"
+              <img
+                  src="/example.png" 
                   alt="Vikram"
                   className="w-full h-full object-cover"
                 />
